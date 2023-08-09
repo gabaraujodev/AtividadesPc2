@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'JogoDaMemoria.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJKb2dvRGFNZW1vcmlhLmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5Kb2dvRGFNZW1vcmlhPC90aXRsZT4KICAgIDx2ZW5kb3I+Z2Ficmk8L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4KICAgIDxqYXIgaHJlZj0iSm9nb0RhTWVtb3JpYS5qYXIiIHNpemU9Ijc0NzEiIGRvd25sb2FkPSJlYWdlciIgLz4KICA8L3Jlc291cmNlcz4KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iam9nb2RhbWVtb3JpYS5QcmluY2lwYWwuSm9nb0RhTWVtb3JpYSIgIG5hbWU9IkpvZ29EYU1lbW9yaWEiIC8+CiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+Cjwvam5scD4K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedjogodamemoria.Principal() {
+        dtjava.embed(
+            {
+                id : 'jogodamemoria.Principal',
+                url : 'JogoDaMemoria.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJKb2dvRGFNZW1vcmlhLmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5Kb2dvRGFNZW1vcmlhPC90aXRsZT4KICAgIDx2ZW5kb3I+Z2Ficmk8L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4KICAgIDxqYXIgaHJlZj0iSm9nb0RhTWVtb3JpYS5qYXIiIHNpemU9Ijc0NzEiIGRvd25sb2FkPSJlYWdlciIgLz4KICA8L3Jlc291cmNlcz4KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iam9nb2RhbWVtb3JpYS5QcmluY2lwYWwuSm9nb0RhTWVtb3JpYSIgIG5hbWU9IkpvZ29EYU1lbW9yaWEiIC8+CiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+Cjwvam5scD4K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedjogodamemoria.Principal);
+</script>
+
+</head><body>
+<h2>Test page for <b>JogoDaMemoria</b></h2>
+  <b>Webstart:</b> <a href='JogoDaMemoria.jnlp' onclick="return launchApplication('JogoDaMemoria.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
