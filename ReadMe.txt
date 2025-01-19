@@ -4,7 +4,7 @@ Sobre o Curso
 Neste curso, exploramos os princípios da programação orientada a objetos (POO) e suas aplicações no desenvolvimento de software. Durante o semestre, adquirimos conhecimentos e habilidades essenciais para projetar, implementar e manter sistemas de software eficientes e modulares.
 
 Atividades
-Aqui estão alguns topicos de atividades realizadas ao longo do curso:
+Alguns topicos de atividades realizadas ao longo do curso:
 
 1. Introdução à POO
 Exploramos os conceitos fundamentais da programação orientada a objetos com um programa de Baralho, incluindo classes, objetos= e encapsulamento. Implementamos exemplos básicos para entender como os princípios de POO se aplicam na prática.
